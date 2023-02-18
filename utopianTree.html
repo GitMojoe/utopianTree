@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function utopianTree(n) {
+  //set initial height of the Tree to 1
+  let height = 1;
+     //write a for loop to loop through the indexes of n where the indexes 
+     //represent each cycle.        
+   for (let i=1; i<=n; i++){
+    //determine spring and summer where
+    //spring is an odd number and summer is an even number
+     if(i % 2 ===1){
+        //if i is spring multiply height by 2
+       height = height *=2;
+     }else {
+        //if height is summer add one to height
+       height = height += 1;
+     }
+   }
+   return height
+ }
+ let result = utopianTree(4)
+ console.log(result)
+    </script>
+</body>
+</html>
